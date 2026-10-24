@@ -1,15 +1,21 @@
 {
-  "manifestVersion": 1,
+  "manifestVersion": 2,
   "id": "orca-multipass-recipes",
   "publisher": "stablyai",
   "name": "Multipass VM Recipes",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "execution": "instructional",
   "description": "A reviewed starter lifecycle for disposable Multipass workspaces.",
   "repository": "https://github.com/stablyai/orca-multipass-recipes",
-  "engines": { "orca": ">=1.4.0" },
-  "pluginApi": 1,
+  "engines": {
+    "orca": ">=1.4.233"
+  },
   "contributes": {
-    "vmRecipes": [{ "path": "recipes/ubuntu-lts.json" }]
+    "vmRecipes": [
+      {
+        "path": "recipes/ubuntu-lts.json"
+      }
+    ]
   },
   "capabilities": []
 }
